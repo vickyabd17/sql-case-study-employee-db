@@ -1,4 +1,4 @@
-use sqlcasestudy1
+USE sqlcasestudy1
 
 CREATE TABLE LOCATIONS (
   Location_ID INT PRIMARY KEY,
@@ -83,7 +83,9 @@ SELECT FIRST_NAME, LAST_NAME, SALARY, COMM FROM EMPLOYEE
 --Employee", Department ID as "Dep_id".
 SELECT EMPLOYEE_ID AS ID_OF_THE_EMPLOYEE, LAST_NAME AS NAME_OF_THE_EMPLOYEE, DEPARTMENT_ID AS DEPT_ID FROM EMPLOYEE
 
---7. List out the annual salary of the employees with their names only.SELECT FIRST_NAME, LAST_NAME, MIDDLE_NAME, SALARY * 12 AS ANNUAL_SALARY FROM EMPLOYEE
+--7. List out the annual salary of the employees with their names only.
+SELECT FIRST_NAME, LAST_NAME, MIDDLE_NAME, SALARY * 12 AS ANNUAL_SALARY FROM EMPLOYEE
+
 --WHERE Condition:
 --1. List the details about "Smith".
 SELECT * FROM EMPLOYEE WHERE LAST_NAME='SMITH'
@@ -580,6 +582,7 @@ WHERE
         FROM employee
         WHERE department_id = e.department_id
     );
+
 
 
 
